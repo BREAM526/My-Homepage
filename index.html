@@ -17,8 +17,12 @@
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">首页</a></li>
                 <li><a href="#about" class="nav-link">关于我</a></li>
-                <li><a href="#homeworks" class="nav-link">作业展示</a></li>
+                <li><a href="#hobbies" class="nav-link">个人爱好</a></li>
+                <li><a href="#courses" class="nav-link">我的课程</a></li>
             </ul>
+            <button class="theme-toggle" id="theme-toggle" aria-label="切换深色模式">
+                <span class="theme-icon">🌙</span>
+            </button>
         </div>
     </nav>
 
@@ -28,20 +32,21 @@
             <div class="hero-content">
                 <h1 class="hero-title">你好，我是<span class="highlight">段梦熊</span></h1>
                 <p class="hero-subtitle">北京大学物理学院 · 24级本科生</p>
-                <p class="hero-desc">物理系学生，热爱编程，这里记录着我的学习历程和作业成果，欢迎参观交流。</p>
-                <a href="#homeworks" class="btn-primary">查看作业</a>
+                <p class="hero-desc">热爱健身、唱歌和游戏，也喜欢用代码实现想法。这个网站记录着我的学习历程和成长点滴。</p>
+                <a href="#about" class="btn-primary">了解更多</a>
             </div>
             <div class="hero-visual">
-                <div class="avatar-placeholder">
-                    <svg viewBox="0 0 120 120" fill="none">
-                        <circle cx="60" cy="60" r="55" fill="#E8F0FE" stroke="#4A6FA5" stroke-width="2"/>
-                        <circle cx="60" cy="45" r="20" fill="#4A6FA5"/>
-                        <path d="M25 100 Q60 70 95 100" fill="#4A6FA5"/>
-                    </svg>
+                <div class="avatar-container">
+                    <div class="avatar-circle">
+                        <div class="avatar-inner">👨‍🎓</div>
+                    </div>
+                    <div class="floating-icons">
+                        <span class="floating-icon">📚</span>
+                        <span class="floating-icon">💻</span>
+                        <span class="floating-icon">🔬</span>
+                        <span class="floating-icon">🎯</span>
+                    </div>
                 </div>
-                <div class="floating-card card-1">📚</div>
-                <div class="floating-card card-2">💻</div>
-                <div class="floating-card card-3">🚀</div>
             </div>
         </div>
     </section>
@@ -52,40 +57,89 @@
             <h2 class="section-title">关于我</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>我是一名热爱编程的学生，目前正在学习网页开发和相关技术。</p>
-                    <p>这个网站是我学习历程的记录，每个作业都代表着一次新的尝试和进步。</p>
+                    <p>北京大学物理学院 24 级本科生，2025-2026 春季学期在读。</p>
+                    <p>目前在学习理论物理、力学、热学、光学和高数等课程，同时也在探索编程的世界。喜欢把物理思维和代码结合，玩出有趣的东西。</p>
                     <div class="skills">
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">🌐 Web开发</span>
+                        <span class="skill-tag">⚛️ 物理思维</span>
+                        <span class="skill-tag">📐 数学建模</span>
+                        <span class="skill-tag">💻 编程实践</span>
                     </div>
                 </div>
                 <div class="about-stats">
                     <div class="stat-item">
                         <span class="stat-number">5</span>
-                        <span class="stat-label">已完成作业</span>
+                        <span class="stat-label">本学期课程</span>
                     </div>
                     <div class="stat-item">
                         <span class="stat-number">3</span>
-                        <span class="stat-label">学习项目</span>
+                        <span class="stat-label">个人爱好</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number">1</span>
-                        <span class="stat-label">正在学习</span>
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">探索中</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 作业展示 -->
-    <section class="homeworks" id="homeworks">
+    <!-- 个人爱好 -->
+    <section class="hobbies" id="hobbies">
         <div class="section-container">
-            <h2 class="section-title">作业展示</h2>
-            <p class="section-desc">这里是我完成的一些作业，记录着每一步的成长。</p>
-            <div class="homework-grid" id="homework-grid">
-                <!-- 作业卡片会通过 JS 动态生成 -->
+            <h2 class="section-title">个人爱好</h2>
+            <p class="section-desc">学习之余，这些爱好让生活更加丰富多彩</p>
+            <div class="hobby-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">💪</div>
+                    <h3 class="hobby-name">健身</h3>
+                    <p class="hobby-desc">保持身体健康是高效学习的基础。每周坚持锻炼，塑造更好的自己。</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎤</div>
+                    <h3 class="hobby-name">唱歌</h3>
+                    <p class="hobby-desc">音乐是最好的放松方式。唱歌让我释放压力，享受旋律带来的快乐。</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎮</div>
+                    <h3 class="hobby-name">打游戏</h3>
+                    <p class="hobby-desc">适当的游戏是脑力放松。不过要控制时间，学习为主，游戏为辅~</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我的课程 -->
+    <section class="courses" id="courses">
+        <div class="section-container">
+            <h2 class="section-title">我的课程</h2>
+            <p class="section-desc">2025-2026 春季学期</p>
+            <div class="course-grid" id="course-grid">
+                <div class="course-card">
+                    <div class="course-icon">🔬</div>
+                    <h3 class="course-name">理论物理基础 1</h3>
+                    <p class="course-desc">物理学专业核心基础课程</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">⚙️</div>
+                    <h3 class="course-name">理论力学</h3>
+                    <p class="course-desc">经典力学理论体系</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🔥</div>
+                    <h3 class="course-name">热学</h3>
+                    <p class="course-desc">热力学与统计物理基础</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">💡</div>
+                    <h3 class="course-name">光学</h3>
+                    <p class="course-desc">波动光学与几何光学</p>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">📐</div>
+                    <h3 class="course-name">高等数学 A2</h3>
+                    <p class="course-desc">微积分与线性代数进阶</p>
+                </div>
             </div>
         </div>
     </section>
